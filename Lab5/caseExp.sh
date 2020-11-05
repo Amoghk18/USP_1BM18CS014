@@ -1,5 +1,8 @@
 #! /bin/sh
 
+end=1
+while [ $end -eq 1 ]
+do
 echo "Enter two values on which operations have to be performed : \c"
 read a b
 echo "Operations are : "
@@ -23,3 +26,6 @@ case $op in
         ;; 
         *)echo Not a valid choice
 esac
+echo "Enter 1 to continue, 0 to end"
+read end
+done
